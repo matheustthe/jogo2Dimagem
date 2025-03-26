@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Canva 2D</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        canvas {
+            margin-top: 50px;
+            background-image: url('./a-parede-das-montanhas-com-palmeiras-e-montanhas-ao-fundo_1086760-105117.avif');
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .info {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="JogoCanvas" width="800" height="400"></canvas>
+    <button id="reiniciarBtn">Reiniciar Jogo</button>
+    <div class="info">
+        <span id="pontuacao">Pontuação: 0</span><br>
+        <span id="tempo">Tempo: 0s</span><br>
+        <span id="pontuacaoMaxima">Pontuação Máxima: 0</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
